@@ -41,3 +41,15 @@
 | `<dd>`    | Description        | Description du terme         |
 
 ---
+## 📎 Médias et objets
+
+| Balise        | Rôle          | Description                                    |
+|---------------|---------------|------------------------------------------------|
+| `<img>`       | Image         | Affiche une image                              |
+| `<figure>`    | Élément média | Encadre un média (image, graphique…)           |
+| `<figcaption>`| Légende       | Légende du média dans `<figure>`              |
+| `<audio>`     | Audio         | Intègre un fichier audio                       |
+| `<video>`     | Vidéo         | Intègre une vidéo                              |
+| `<iframe>`    | Cadre intégré | Intègre une autre page web                     |
+
+---
