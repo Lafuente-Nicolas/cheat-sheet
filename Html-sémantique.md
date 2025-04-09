@@ -53,3 +53,15 @@
 | `<iframe>`    | Cadre intégré | Intègre une autre page web                     |
 
 ---
+## 🔗 Liens et formulaires
+
+| Balise      | Rôle           | Description                                   |
+|-------------|----------------|-----------------------------------------------|
+| `<a>`       | Lien           | Crée un lien hypertexte                       |
+| `<form>`    | Formulaire     | Conteneur de champs                           |
+| `<input>`   | Champ de saisie| Saisie texte, checkbox, etc.                  |
+| `<label>`   | Étiquette      | Associe un texte à un champ                   |
+| `<button>`  | Bouton         | Bouton cliquable                              |
+| `<textarea>`| Zone de texte  | Champ texte multiligne                        |
+| `<select>`  | Liste déroulante| Choix multiples                              |
+| `<option>`  | Option         | Élément d’une liste déroulante                |
