@@ -102,3 +102,17 @@ Réutilise des blocs de styles sans répéter le code :
   background-color: #fff;
 }
 ```
+
+## Media Queries imbriquées
+
+Les __media queries imbriquées__ permettent d’intégrer directement __les règles CSS responsive__ dans le bloc du composant concerné, __au lieu de les écrire séparément__ comme en CSS classique.
+
+```scss
+.container {
+  padding: 1rem;
+
+  @media (min-width: 768px) {
+    padding: 2rem;
+  }
+}
+```
