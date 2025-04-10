@@ -73,3 +73,16 @@ Blocs de code réutilisables, avec ou sans paramètres.
 }
 ```
 si pas de paramètre, il est favorable d'utiliser `extend`
+
+## Fonctions
+
+Les fonctions retournent une valeur. Parfait pour les tailles, les calculs dynamiques, etc.
+```scss
+@function rem($px) {
+  @return $px / 16 * 1rem;
+}
+
+.title {
+  font-size: rem(32); // = 2rem
+}
+```
