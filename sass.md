@@ -55,3 +55,21 @@ body {
   background-color: colors.$bg-color;
 }
 ```
+
+ ## Mixins
+
+Blocs de code réutilisables, avec ou sans paramètres.
+
+```scss
+@mixin btn($color) {
+  background-color: $color;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+}
+
+.button {
+  @include btn(#f4c6c8);
+}
+```
+si pas de paramètre, il est favorable d'utiliser `extend`
