@@ -86,3 +86,19 @@ Les fonctions retournent une valeur. Parfait pour les tailles, les calculs dynam
   font-size: rem(32); // = 2rem
 }
 ```
+
+ ## Extend (%placeholder)
+
+Réutilise des blocs de styles sans répéter le code :
+```scss
+%card {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.product {
+  @extend %card;
+  background-color: #fff;
+}
+```
