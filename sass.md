@@ -4,7 +4,7 @@ SASS (ou SCSS) est une extension puissante de CSS. Elle permet une écriture plu
 
 ---
 
-## 🔹 1. Variables
+## Variables
 
 Les variables permettent de stocker des valeurs (couleurs, tailles, etc.) réutilisables dans tout le code.
 
@@ -17,3 +17,20 @@ $padding: 1rem;
   padding: $padding;
 }
 ```
+
+## Imbrication (Nesting)
+
+Permet de garder une structure logique dans les sélecteurs CSS.
+```scss
+nav {
+  ul {
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  }
+}
+```
+⚠️ Évite d’imbriquer trop profondément (max 3 niveaux).
