@@ -34,3 +34,24 @@ nav {
 }
 ```
 ⚠️ Évite d’imbriquer trop profondément (max 3 niveaux).
+
+## Importation de fichiers
+
+Pour organiser ton code en plusieurs fichiers.
+```scss
+@import 'header'; // header.scss ou _header.scss
+```
+🔔 `@import` est obsolète, on préfère maintenant `@use` et `@forward` :
+
+_colors.scss
+```scss
+$bg-color: #fff;
+```
+main.scss
+```scss
+@use 'colors';
+
+body {
+  background-color: colors.$bg-color;
+}
+```
