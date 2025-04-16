@@ -35,3 +35,33 @@ Gras et Italique :
 ***texte en gras et italique***
 ___texte en gras et italique___
 
+
+Listes à puces :
+
+    Utilise un astérisque (*), un tiret (-), ou un plus (+) suivi d’un espace.
+
+* Élément 1
+* Élément 2
+  * Sous-élément 2.1
+  * Sous-élément 2.2
+
+Listes numérotées :
+
+    Utilise un nombre suivi d’un point (1., 2., etc.)
+
+1. Premier élément
+2. Deuxième élément
+  1. Sous-élément 1
+  2. Sous-élément 2
+
+
+Liens:
+
+
+    Lien :
+
+[Nom du lien](http://exemple.com)
+
+Lien avec un titre :
+
+    [Nom du lien](http://exemple.com "Titre du lien")
