@@ -65,3 +65,28 @@ Liens:
 Lien avec un titre :
 
     [Nom du lien](http://exemple.com "Titre du lien")
+
+
+Images
+
+
+Les images sont similaires aux liens, mais il y a un ! au début.
+
+    Image :
+
+![Texte alternatif](url-de-l-image)
+
+Image avec un titre :
+
+![Texte alternatif](url-de-l-image "Titre de l'image")
+
+
+Tableaux:
+
+Les tableaux sont créés avec des barres verticales (`|`) et des tirets (`-`).
+
+
+| Colonne 1 | Colonne 2 | Colonne 3 |
+|-----------|-----------|-----------|
+| Ligne 1   | Cellule 1 | Cellule 2 |
+| Ligne 2   | Cellule 3 | Cellule 4 |
