@@ -173,3 +173,21 @@ let animaux = [];
 animaux.push('chat');
 animaux.push('chien');
 ```
+## Opérateurs de comparaison
+
+| Opérateur | Signification                  | Exemple             | Résultat (si x = 5, y = 10) |
+|-----------|--------------------------------|---------------------|-----------------------------|
+| `===`      | Égal à                         | `x === y`            | `false`                     |
+| `!=`      | Différent de                   | `x != y`            | `true`                      |
+| `>`       | Supérieur à                    | `y > x`             | `true`                      |
+| `<`       | Inférieur à                    | `x < y`             | `true`                      |
+| `>=`      | Supérieur ou égal à            | `x >= 5`            | `true`                      |
+| `<=`      | Inférieur ou égal à            | `y <= 5`            | `false`                     |
+
+## Opérateurs logiques 
+
+| Opérateur | Nom         | Signification                        | Exemple                          | Résultat                         |
+|-----------|-------------|--------------------------------------|----------------------------------|----------------------------------|
+| `&&`      | ET logique  | Vrai si les 2 conditions sont vraies | `x > 0 && y > 0`                 | `true` si x=5, y=10              |
+| `||`      | OU logique  | Vrai si **au moins une** est vraie   | `x < 0 || y > 0`                 | `true`                           |
+| `!`       | NON logique | Inverse une condition                | `!(x == 5)`                      | `false`                          |
