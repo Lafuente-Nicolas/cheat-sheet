@@ -15,3 +15,20 @@ while (i <=10){
     console.log ("le chiffre est" +i);
     i++;
 }
+```
+## do while 
+
+```js
+let i= 0;
+do {
+    console.log  ("le chiffre est" +i);
+    i++
+} while(i<=20)
+```
+## for
+
+```js
+for (let i = 0 ; i<=15 ; i++) {
+console.log ("le chiffre est" +i);
+}
+```
