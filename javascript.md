@@ -158,3 +158,18 @@ voiture.afficherDetails();
 ```
 
 Ici, `this.marque`, `this.modele` et `this.annee` font référence aux propriétés de l'objet voiture, ce qui te permet d'afficher facilement ces informations à partir de la méthode afficherDetails.
+
+## Tableau 
+
+### Créer un tableau 
+
+```js
+let nombres = new Array(1, 2, 3, 4);
+```
+### Créer un tableau vide puis ajouter des éléments
+
+```js
+let animaux = [];
+animaux.push('chat');
+animaux.push('chien');
+```
