@@ -32,3 +32,32 @@ for (let i = 0 ; i<=15 ; i++) {
 console.log ("le chiffre est" +i);
 }
 ```
+## fonction 
+```js
+function nomdemafonction (parametre1 , parametre2){
+  console.log ('bonjour');
+}
+nomdemafonction();
+```
+
+## fonction avec variable externe
+
+```js
+let nom = 'Nicolas' ; 
+function nomdemafonction() {
+    let message = 'bonjour, '+ nom;
+    console.log(message)
+}
+nomdemafonction();
+```
+## fonction avec variable interne
+
+La variable sera qu'utilisable dans ma fonction
+```js
+function nomdemafonction() {
+    let nom = 'Nicolas';
+    let message = 'Bonjour,' + nom;
+    console.log(message)
+}
+nomdemafonction();
+```
