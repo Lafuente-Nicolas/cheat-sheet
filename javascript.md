@@ -105,3 +105,13 @@ let age = '19 ans'
 let nom = 'Lafuente'
 let message = 'Bonjour'
 ```
+
+### Constantes
+
+Une constante ne peut __jamais__ être réassignée après sa déclaration. Une fois une valeur assignée à une constante, tu ne peux pas changer cette valeur.
+
+```js
+const nom = 'Lafuente';
+console.log(nom); // Affiche Lafuente
+nom = 'Dupont'; // Erreur ! Impossible de réassigner une constante
+```
