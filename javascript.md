@@ -137,3 +137,24 @@ résultat :
   prenom: "Nicolas"
 }
 ```
+## This
+
+En utilisant this, tu peux accéder aux propriétés et méthodes d'un objet sans avoir à répéter le nom de l'objet chaque fois. Cela rend le code plus concis et réutilisable.
+
+Exemple :
+```js
+const voiture = {
+  marque: 'Toyota',
+  modele: 'Corolla',
+  annee: 2021,
+  afficherDetails: function() {
+    console.log('Marque: ' + this.marque); // 'this' fait référence à l'objet 'voiture'
+    console.log('Modèle: ' + this.modele);
+    console.log('Année: ' + this.annee);
+  }
+};
+
+voiture.afficherDetails();
+```
+
+Ici, `this.marque`, `this.modele` et `this.annee` font référence aux propriétés de l'objet voiture, ce qui te permet d'afficher facilement ces informations à partir de la méthode afficherDetails.
