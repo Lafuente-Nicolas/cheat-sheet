@@ -1,5 +1,6 @@
 # Javacript
 
+## les boucles
 
 | Partie           | Nom              | Rôle                                                        | Exemple         |
 |------------------|------------------|-------------------------------------------------------------|-----------------|
@@ -7,8 +8,8 @@
 | `i <= 10`        | Condition        | Définit si la boucle doit continuer (tant que c'est vrai)   | `i <= 10`       |
 | `i++`            | Mise à jour      | Modifie la variable à chaque tour (le **pas** de la boucle) | `i++`           |
 
-## While
-
+### While
+- Si la condition est fausse dès le début, le bloc ne s’exécute pas du tout sinon s'arrête des qu'elle devient fausse.
 ```js
 let i = 0 ;
 while (i <=10){
@@ -16,7 +17,12 @@ while (i <=10){
     i++;
 }
 ```
-## do while 
+### do while 
+
+ - Le bloc s’exécute au moins une fois, même si la condition est fausse dès le départ.
+
+-  La condition est testée après l’exécution du bloc.
+
 
 ```js
 let i= 0;
@@ -25,22 +31,33 @@ do {
     i++
 } while(i<=20)
 ```
-## for
+### for
+- Elle est idéale quand on sait à l'avance combien de fois on veut boucler.
 
 ```js
 for (let i = 0 ; i<=15 ; i++) {
 console.log ("le chiffre est" +i);
 }
 ```
-## fonction 
+## fonctions
 ```js
 function nomdemafonction (parametre1 , parametre2){
   console.log ('bonjour');
 }
 nomdemafonction();
 ```
+#### exemple avec parametre :
 
-## fonction avec variable externe
+```js
+function aircarre(cote) {
+    let air = cote * cote
+    return air
+}
+let airdemoncarre = aircarre(5)
+console.log(airdemoncarre)
+```
+
+### fonction avec variable externe
 
 ```js
 let nom = 'Nicolas' ; 
@@ -50,7 +67,7 @@ function nomdemafonction() {
 }
 nomdemafonction();
 ```
-## fonction avec variable interne
+### fonction avec variable interne
 
 La variable sera qu'utilisable dans ma fonction
 ```js
@@ -60,4 +77,15 @@ function nomdemafonction() {
     console.log(message)
 }
 nomdemafonction();
+```
+### fonction expression 
+
+une fonction expression est souvent définie dans une variable ou constante
+
+```js
+const multiplier = function(a, b) {
+  return a * b;
+};
+
+console.log(multiplier(5, 10)); // Affiche 50
 ```
