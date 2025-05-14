@@ -89,3 +89,19 @@ const multiplier = function(a, b) {
 
 console.log(multiplier(5, 10)); // Affiche 50
 ```
+### fonction arrow
+```js
+const addition = (a, b) => a * b;
+
+console.log(addition(5, 10)); // Affiche 50
+```
+
+## Variables et Constantes
+
+### Variable
+
+```js
+let age = '19 ans'
+let nom = 'Lafuente'
+let message = 'Bonjour'
+```
