@@ -115,3 +115,25 @@ const nom = 'Lafuente';
 console.log(nom); // Affiche Lafuente
 nom = 'Dupont'; // Erreur ! Impossible de réassigner une constante
 ```
+
+## Objets
+
+```js
+let utilisateur = {
+  nom: "Lafuente",
+  prenom: "Nicolas",
+  age: 19
+};
+console.log(utilisateur); 
+```
+Ne surtout pas oublier les `,`
+
+résultat :
+
+```js
+[object Object] {
+  age: 25,
+  nom: "Lafuente",
+  prenom: "Nicolas"
+}
+```
