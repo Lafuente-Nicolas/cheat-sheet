@@ -189,5 +189,45 @@ animaux.push('chien');
 | Opérateur | Nom         | Signification                        | Exemple                          | Résultat                         |
 |-----------|-------------|--------------------------------------|----------------------------------|----------------------------------|
 | `&&`      | ET logique  | Vrai si les 2 conditions sont vraies | `x > 0 && y > 0`                 | `true` si x=5, y=10              |
-| `||`      | OU logique  | Vrai si **au moins une** est vraie   | `x < 0 || y > 0`                 | `true`                           |
+| `||`     | OU logique  | Vrai si **au moins une** est vraie   | `x < 0 || y > 0`                 | `true`                           |
 | `!`       | NON logique | Inverse une condition                | `!(x == 5)`                      | `false`                          |
+
+
+#  Cheat Sheet DOM JavaScript avec Exemples
+
+##  Sélection d’éléments
+
+###  Par ID
+HTML :
+```html
+<p id="titre">Bonjour</p>
+```
+JS :
+```js
+const titre = document.getElementById('titre');
+console.log(titre.textContent); // Bonjour
+```
+
+###  Par classe
+HTML :
+```html
+<p class="texte">Texte 1</p>
+<p class="texte">Texte 2</p>
+```
+JS :
+```js
+const textes = document.getElementsByClassName('texte');
+console.log(textes[0].textContent); // Texte 1
+```
+
+###  Par balise
+HTML :
+```html
+<div>Zone 1</div>
+<div>Zone 2</div>
+```
+JS :
+```js
+const zones = document.getElementsByTagName('div');
+console.log(zones.length); // 2
+```
