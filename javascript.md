@@ -329,3 +329,44 @@ bouton.addEventListener('click', () => {
   alert('Tu as cliqué !');
 });
 ```
+
+##  Boucles sur plusieurs éléments
+
+HTML :
+```html
+<p class="item">A</p>
+<p class="item">B</p>
+<p class="item">C</p>
+```
+JS :
+```js
+document.querySelectorAll('.item').forEach(item => {
+  item.style.color = 'green';
+});
+```
+
+##  Navigation dans le DOM
+
+HTML :
+```html
+<div id="conteneur">
+  <p>Premier</p>
+  <p>Deuxième</p>
+</div>
+```
+JS :
+```js
+const conteneur = document.getElementById('conteneur');
+console.log(conteneur.children[0].textContent); // Premier
+console.log(conteneur.firstElementChild.textContent); // Premier
+console.log(conteneur.lastElementChild.textContent); // Deuxième
+```
+
+##  Vérifier si un élément existe
+```js
+if (document.querySelector('.existe')) {
+  console.log('L’élément existe !');
+} else {
+  console.log('Pas trouvé.');
+}
+```
