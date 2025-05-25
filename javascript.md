@@ -259,3 +259,39 @@ titre.textContent = 'Nouveau titre';
 ```js
 titre.innerHTML = '<em>En italique</em>';
 ```
+
+###  Modifier les attributs
+HTML :
+```html
+<img id="photo" src="ancienne.jpg" alt="photo">
+```
+JS :
+```js
+const img = document.getElementById('photo');
+img.setAttribute('src', 'nouvelle.jpg');
+console.log(img.getAttribute('alt')); // photo
+img.removeAttribute('alt');
+```
+
+### Modifier le style
+```js
+titre.style.color = 'red';
+titre.style.backgroundColor = 'lightblue';
+```
+
+## Classes CSS dynamiques
+
+HTML :
+```html
+<p id="texte" class="gras">Exemple</p>
+```
+JS :
+```js
+const txt = document.getElementById('texte');
+txt.classList.add('important');
+txt.classList.remove('gras');
+txt.classList.toggle('surligne');
+console.log(txt.classList.contains('gras')); // false
+```
+
+## ➕ Créer / insérer / supprimer des éléments
