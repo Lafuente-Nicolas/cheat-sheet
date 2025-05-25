@@ -231,3 +231,31 @@ JS :
 const zones = document.getElementsByTagName('div');
 console.log(zones.length); // 2
 ```
+
+###  `querySelector` et `querySelectorAll`
+HTML :
+```html
+<p class="demo">Coucou</p>
+<p class="demo">Salut</p>
+```
+JS :
+```js
+const unSeul = document.querySelector('.demo');
+console.log(unSeul.textContent); // Coucou
+
+const tous = document.querySelectorAll('.demo');
+tous.forEach(el => console.log(el.textContent)); // Coucou, Salut
+```
+
+##  Manipulation d’éléments
+
+###  Modifier le texte
+```js
+const titre = document.getElementById('titre');
+titre.textContent = 'Nouveau titre';
+```
+
+###  Modifier le HTML interne
+```js
+titre.innerHTML = '<em>En italique</em>';
+```
