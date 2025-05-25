@@ -295,3 +295,37 @@ console.log(txt.classList.contains('gras')); // false
 ```
 
 ## ➕ Créer / insérer / supprimer des éléments
+
+
+###  Créer et insérer un élément
+```js
+const nouveauPara = document.createElement('p');
+nouveauPara.textContent = 'Paragraphe ajouté';
+document.body.appendChild(nouveauPara);
+```
+
+###  Insérer avant un élément
+```js
+const reference = document.getElementById('titre');
+document.body.insertBefore(nouveauPara, reference);
+```
+
+###  Supprimer un élément
+```js
+reference.remove(); // supprime le titre
+```
+
+##  Événements
+
+HTML :
+```html
+<button id="monBouton">Clique-moi</button>
+```
+JS :
+```js
+const bouton = document.getElementById('monBouton');
+
+bouton.addEventListener('click', () => {
+  alert('Tu as cliqué !');
+});
+```
