@@ -32,3 +32,14 @@
 ```ts
 let nom: string = "Nicolas";
 const age: number = 19;
+```
+##  code en TypeScript
+
+|  **Éléments**                 |  **Est-ce qu’on les type ?**                  | 📝 **Exemple**                                         |
+|-------------------------------|--------------------------------------------------|--------------------------------------------------------|
+| **Variables**                 | Oui                                              | `let nom: string = "Nicolas"`                         |
+| **Paramètres de fonction**    | Oui                                              | `function bonjour(prenom: string): void {}`           |
+| **Retour de fonction**        | Oui (sauf si `void`)                             | `function age(): number { return 19; }`               |
+| **Objets**                    | Oui, via `type` ou `interface`                   | `type Utilisateur = { nom: string; age: number }`     |
+| **Tableaux**                  | Oui                                              | `let notes: number[] = [15, 18, 12];`                 |
+| **Fonctions anonymes/callbacks** | Oui                                          | `(u: Utilisateur) => console.log(u.nom)`              |
